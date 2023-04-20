@@ -1,7 +1,16 @@
 .Hero {
   display: flex;
-  height: 77vh;
+  height: 77%;
   margin-top: 3.5rem;
+}
+
+.profile img {
+  margin-right: auto;
+  margin-left: auto;
+  width: 77%;
+  border-radius: 50%;
+  object-fit: fill;
+  overflow: hidden;
 }
 
 .img-container {
@@ -9,30 +18,30 @@
   width: 50%;
 }
 /* left side styling */
-.i-left {
+.wrapper {
   display: flex;
   position: relative;
   flex: 1;
-  flex-direction: column;
+  flex-direction: row;
   gap: 2rem;
   z-index: 100;
 }
-.i-name {
+.profile {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
 }
-.i-name > :nth-child(1) {
+.profile > :nth-child(1) {
   color: var(--black);
   font-weight: bold;
   font-size: 2.5rem;
 }
-.i-name > :nth-child(2) {
+.profile > :nth-child(2) {
   color: #fb5635;
   font-weight: bold;
   font-size: 3.5rem;
 }
-.i-name > :nth-child(3) {
+.profile > :nth-child(3) {
   font-weight: 100;
   font-size: 1rem;
   color: var(--gray);
@@ -42,63 +51,18 @@
   width: 6rem;
   height: 2rem;
 }
-.i-icons {
+.icons {
   position: relative;
   left: -23px;
   margin-top: 0.5rem;
   display: flex;
   gap: 0rem;
 }
-.i-icons > * {
+.icons > * {
   transform: scale(0.5);
 }
-.i-icons > *:hover {
+.icons > *:hover {
   cursor: pointer;
-}
-/* right side styling */
-.i-right {
-  flex: 1;
-  position: relative;
-}
-.i-right > * {
-  position: absolute;
-  z-index: 1;
-  min-width: 256px;
-  max-width: 386px;
-  width: 70%;
-}
-
-.i-right .img-container > * {
-  position: absolute;
-}
-
-.i-right .img-container > :nth-child(1) {
-  transform: scale(2.5);
-  top: 1.5rem;
-  left: 25%;
-  z-index: -10;
-}
-
-.i-right > :nth-child(2) {
-  transform: scale(1);
-  border-radius: 50%;
-  top: -4.2rem;
-  left: -20%;
-}
-
-.i-right > :nth-child(3) {
-  transform: scale(1);
-  border-radius: 50%;
-  top: -4.2rem;
-  left: -20%;
-}
-
-.i-right > :nth-child(4) {
-  transform: scale(1);
-  top: -19%;
-  left: -24%;
-  border-radius: 50%;
-  padding: 0;
 }
 
 /* blur */
@@ -115,7 +79,7 @@
   filter: blur(72px);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .Hero {
     flex-direction: column;
     gap: 7rem;
