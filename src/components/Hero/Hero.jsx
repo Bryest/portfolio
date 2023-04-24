@@ -6,6 +6,7 @@ import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import me from "../../img/me.png";
+import { faEnvelopeOpen } from "@fortawesome/free-solid-svg-icons";
 
 const Hero = () => {
   // context
@@ -27,15 +28,17 @@ const Hero = () => {
           <Link to="contact" spy={true} smooth={true}>
             <button className="button">Contact</button>
           </Link>
-          <img src={me} alt="" />
+          <div className="avatar">
+            <img src={me} alt="" />
+          </div>
           <div className="icons">
-            <FontAwesomeIcon icon={faGithub} size="6x" style={{ color: "var(--primary-color)", fontSize: "5rem" }} />
-            <FontAwesomeIcon icon={faLinkedinIn} size="6x" style={{ color: "var(--primary-color)", fontSize: "5rem" }} />
-            <FontAwesomeIcon icon={faInstagram} size="6x" style={{ color: "var(--primary-color)", fontSize: "5rem" }} />
+            <a href="https://github.com/Bryest"><FontAwesomeIcon icon={faGithub} size="6x" style={{ color: "var(--primary-color)", fontSize: "5rem" }} /></a>
+            <a href="https://www.linkedin.com/in/renato-castillo-a294a915a/"> <FontAwesomeIcon icon={faLinkedinIn} size="6x" style={{ color: "var(--primary-color)", fontSize: "5rem" }} /></a>
+            {/*<FontAwesomeIcon icon={faEnvelopeOpen} size="6x" style={{ color: "var(--primary-color)", fontSize: "5rem" }} />*/}
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 
