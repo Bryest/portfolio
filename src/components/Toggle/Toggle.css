@@ -1,7 +1,7 @@
 .toggle {
   display: flex;
   justify-content: space-between;
-  border: 3px solid #fb5635;
+  border: 3px solid var(--primary-color);
   border-radius: 1rem;
   position: relative;
   padding: 2px;
@@ -10,10 +10,10 @@
 .toggle > * {
   width: 1rem;
   height: 1rem;
-  color: #fb5635;
+  color: var(--primary-color);
 }
 .t-button {
   border-radius: 100%;
-  background: #fb5635;
+  background: var(--primary-color);
   position: absolute;
 }

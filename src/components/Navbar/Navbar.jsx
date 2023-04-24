@@ -41,6 +41,7 @@ const Navbar = () => {
 
         <button
           className="nav-btn"
+          style={{ paddingLeft: "2px" }}
           onClick={showNavbar}>
           <FaBars />
         </button>
@@ -48,7 +49,6 @@ const Navbar = () => {
 
       {/* right */}
       <div className="n-right">
-
         <Toggle />
       </div>
     </div>

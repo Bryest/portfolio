@@ -44,12 +44,11 @@
 }
 
 .nav-btn {
-  padding: 5px;
   cursor: pointer;
   background: transparent;
   border: none;
   outline: none;
-  color: #fb5635;
+  color: var(--primary-color);
   visibility: hidden;
   opacity: 0;
   font-size: 1.8rem;

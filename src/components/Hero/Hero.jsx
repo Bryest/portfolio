@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "./Hero.css";
-import blob2 from "../../img/blob1.svg";
+import blob from "../../img/blob.svg";
 import { themeContext } from "../../Context";
 import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,25 +15,23 @@ const Hero = () => {
   return (
     <div className="Hero" id="Intro">
       <div className="img-container">
-        <img src={blob2} alt="" />
+        <img src={blob} alt="" />
       </div>
 
       <div className="wrapper">
         <div className="profile">
-          <span style={{ color: darkMode ? "white" : "" }}>Hi! I Am</span>
+          {/*<span style={{ color: darkMode ? "white" : "" }}></span>*/}
           <span>Renato Castillo</span>
           <span>
-            <span style={{ fontWeight: "bold" }}>Fullstack Developer</span> with high level in web designing
-            and back-end development, always focusing in quality of the service.
-          </span>
+            <span style={{ fontWeight: "bold" }}>Fullstack Developer</span> focused on building quality-driven functional software for our users.</span>
           <Link to="contact" spy={true} smooth={true}>
-            <button className="button n-button">Contact</button>
+            <button className="button">Contact</button>
           </Link>
           <img src={me} alt="" />
           <div className="icons">
-            <FontAwesomeIcon icon={faGithub} size="6x" style={{ color: "#FB5635", fontSize: "5rem" }} />
-            <FontAwesomeIcon icon={faLinkedinIn} size="6x" style={{ color: "#FB5635", fontSize: "5rem" }} />
-            <FontAwesomeIcon icon={faInstagram} size="6x" style={{ color: "#FB5635", fontSize: "5rem" }} />
+            <FontAwesomeIcon icon={faGithub} size="6x" style={{ color: "var(--primary-color)", fontSize: "5rem" }} />
+            <FontAwesomeIcon icon={faLinkedinIn} size="6x" style={{ color: "var(--primary-color)", fontSize: "5rem" }} />
+            <FontAwesomeIcon icon={faInstagram} size="6x" style={{ color: "var(--primary-color)", fontSize: "5rem" }} />
           </div>
         </div>
       </div>

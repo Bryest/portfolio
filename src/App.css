@@ -1,6 +1,7 @@
 :root {
   --background-light-color: #f3f2ef;
   --background-dark-color: #0f172a;
+  --primary-color: #dc143c;
   --button-primary-color: #dc143c;
 
   --yellow: #f5c32c;
@@ -22,20 +23,21 @@
 }
 
 .button {
-  background: var(--button-primary-color);
-  border-radius: 34px;
-  border: none;
-  color: white;
+  background-color: var(--background-light-color);
+  border: 2px solid var(--primary-color);
   font-size: 16px;
   padding: 11px 26px 11px 26px;
+  color: gray;
+  font-weight: bold;
 }
 
 .button:hover {
-  background: white;
+  background: --background-dark-color;
   cursor: pointer;
-  border: 1px solid var(--orange);
-  color: var(--orange);
+  border: 2px solid var(--background-dark-color);
+  color: var(--background-dark-color);
 }
+
 @media screen and (max-width: 480px) {
   .App {
     padding: 0.5rem 1rem;
