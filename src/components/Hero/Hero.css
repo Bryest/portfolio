@@ -1,39 +1,33 @@
 .Hero {
   display: flex;
-  height: 77%;
+
   margin-top: 3.5rem;
 }
 
-.img-container {
+.blob-container {
   color: black;
   position: absolute;
   width: 50%;
 }
-/* left side styling */
-.wrapper {
-  display: flex;
-  position: relative;
-  flex: 1;
-  flex-direction: row;
-  gap: 2rem;
-  z-index: 100;
-}
-.profile {
+
+.profile .content {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
 }
 
-.profile > :nth-child(1) {
+.profile .content > :nth-child(1) {
+  display: line;
   color: var(--primary-color);
   padding: 0;
   font-weight: bold;
   font-size: 1.8rem;
 }
-.profile > :nth-child(2) {
+.profile .content > :nth-child(2) {
+  display: line;
   color: var(--gray);
 }
-.profile > :nth-child(2) span {
+.profile .content > :nth-child(2) span {
   font-weight: 100;
   font-size: 1.7rem;
   margin-top: 10px;
@@ -74,6 +68,7 @@
 div .avatar {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 div .avatar img {
@@ -81,22 +76,50 @@ div .avatar img {
   object-fit: fill;
   border-radius: 50%;
   border: 4px solid rgba(0, 0, 0, 0);
+  z-index: 10;
 }
 div .avatar img:hover {
   border: 4px solid rgba(255, 255, 255, 0.1);
 }
-@media screen and (max-width: 600px) {
-  .Hero {
-    flex-direction: column;
-    gap: 7rem;
-    height: 64rem;
+
+.icon-style {
+  color: var(--primary-color);
+  fontsize: 5rem;
+}
+
+.content .icons {
+  display: none;
+}
+
+@media screen and (min-width: 601px) {
+  .profile {
+    display: flex;
+    flex-direction: row;
+  }
+  .profile .icons {
+    display: none;
+  }
+  .content .icons {
+    display: flex;
+  }
+  div .avatar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  div .avatar img {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  div .avatar {
+    justify-content: end;
   }
 
-  .i-right {
-    transform: scale(0.8);
-    left: -3rem;
-  }
-  .i-right .blur {
-    display: none;
+  .profile {
+    width: 100%;
   }
 }

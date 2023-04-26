@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import Toggle from "../Toggle/Toggle";
 import "./Navbar.css";
 import { Link } from "react-scroll";
 import { FaBars } from "react-icons/fa";
 import { useRef } from "react";
+import { themeContext } from "../../Context";
 
 const Navbar = () => {
   const navRef = useRef();
+
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
 
   const showNavbar = () => {
     navRef.current.classList.toggle(
@@ -15,27 +19,27 @@ const Navbar = () => {
   }
 
   return (
-    <div className="n-wrapper" id="Navbar">
-      {/* left */}
+    <div className="n-wrapper">
       <div className="n-left">
         <div className="n-list">
-          <ul style={{ listStyleType: "none" }}>
+          <ul style={{
+            listStyleType: "none"
+          }}>
             <li>
-              <Link activeClass="active" to="Navbar" spy={true} smooth={true}>
+              <Link style={{ color: darkMode ? "" : "var(--background-dark-color)", }} activeClass="active" to="Navbar" spy={true} smooth={true}>
                 Home
               </Link>
             </li>
             <li>
-              <Link to="skills" spy={true} smooth={true}>
+              <Link style={{ color: darkMode ? "" : "var(--background-dark-color)", }} to="skills" spy={true} smooth={true}>
                 Skills
               </Link>
             </li>
             <li>
-              <Link to="work" spy={true} smooth={true}>
+              <Link style={{ color: darkMode ? "" : "var(--background-dark-color)", }} to="work" spy={true} smooth={true}>
                 Work
               </Link>
             </li>
-
           </ul>
         </div>
 
@@ -47,7 +51,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* right */}
       <div className="n-right">
         <Toggle />
       </div>

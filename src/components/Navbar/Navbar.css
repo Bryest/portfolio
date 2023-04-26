@@ -2,15 +2,12 @@
   height: 10vh;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 2rem;
-  top: 0;
 }
 .n-left {
   flex: 1;
   align-items: center;
   justify-content: left;
   display: flex;
-  gap: 2rem;
 }
 
 .n-name {
@@ -28,10 +25,11 @@
 .n-list {
   flex: 10;
 }
+
 .n-list > ul {
   display: flex;
+  justify-content: space-between;
   gap: 1rem;
-  margin-right: 4rem;
 }
 
 .n-list > ul :hover {
@@ -54,18 +52,18 @@
   font-size: 1.8rem;
 }
 
+.n-list ul li a {
+  display: flex;
+  justify-content: space-between;
+  color: var(--background-light-color);
+}
+
 @media only screen and (max-width: 1200px) {
   .nav-btn {
     visibility: visible;
     opacity: 1;
   }
 
-  .n-list {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 480px) {
   .n-list {
     display: none;
   }
