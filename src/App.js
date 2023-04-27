@@ -14,6 +14,9 @@ function App() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
+  useEffect(() => {
+    document.body.style.background = darkMode ? 'var(--background-dark-color)' : "";
+  })
 
   return (
     <div

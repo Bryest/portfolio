@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto&family=Signika:wght@300;400&display=swap");
+
 :root {
   --background-light-color: #f3f2ef;
   --background-dark-color: #0f172a;
@@ -15,6 +17,19 @@
   --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
 }
 
+@font-face {
+  font-family: "Gumela Regular";
+  src: url("../src/fonts/Gumela Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 20px;
+}
+
 html,
 body {
   height: 100%;
@@ -27,7 +42,6 @@ body {
 }
 
 .App {
-  height: 100vh;
   padding: 1.5rem 18%;
   background-color: var(--background-light-color);
 }
