@@ -25,12 +25,14 @@ const Hero = () => {
         <div className="content">
           <span>Renato Castillo</span>
           <span>
-            <span style={{ fontWeight: "bold" }}>Fullstack Developer</span>
+            <span style={{ fontWeight: "bold" }}>Fullstack Developer </span>
             focused on building quality-driven functional software for our users.
           </span>
-          <Link to="contact" spy={true} smooth={true}>
+
+          <a href="https://www.linkedin.com/in/renato-castillo-a294a915a/">
             <button className="button">Contact</button>
-          </Link>
+          </a>
+
           <div className="icons">
             <a href="https://github.com/Bryest"><FontAwesomeIcon icon={faGithub} size="6x" className="icon-style" /></a>
             <a href="https://www.linkedin.com/in/renato-castillo-a294a915a/"> <FontAwesomeIcon icon={faLinkedinIn} size="6x" className="icon-style" /></a>

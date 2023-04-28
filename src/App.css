@@ -68,3 +68,15 @@ body {
     padding: 0.5rem 1rem;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .App {
+    padding: 2.5rem 20%;
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .App {
+    padding: 1.5rem 20%;
+  }
+}

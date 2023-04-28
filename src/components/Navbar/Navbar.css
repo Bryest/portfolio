@@ -55,7 +55,6 @@
 .n-list ul li a {
   display: flex;
   justify-content: space-between;
-  color: var(--background-light-color);
 }
 
 @media only screen and (max-width: 1200px) {

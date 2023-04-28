@@ -26,17 +26,17 @@ const Navbar = () => {
             listStyleType: "none"
           }}>
             <li>
-              <Link style={{ color: darkMode ? "" : "var(--background-dark-color)", }} activeClass="active" to="Navbar" spy={true} smooth={true}>
+              <Link style={{ color: darkMode ? "var(--background-light-color)" : "gray", }} >
                 Home
               </Link>
             </li>
             <li>
-              <Link style={{ color: darkMode ? "" : "var(--background-dark-color)", }} to="skills" spy={true} smooth={true}>
+              <Link style={{ color: darkMode ? "var(--background-light-color)" : "gray", }} to="skills" spy={true} smooth={true}>
                 Skills
               </Link>
             </li>
             <li>
-              <Link style={{ color: darkMode ? "" : "var(--background-dark-color)", }} to="work" spy={true} smooth={true}>
+              <Link style={{ color: darkMode ? "var(--background-light-color)" : "gray", }} to="work" spy={true} smooth={true}>
                 Work
               </Link>
             </li>
