@@ -7,7 +7,7 @@
   --button-primary-color: #dc143c;
 
   --yellow: #f5c32c;
-  --orange: #fca61f;
+  /*--orange: #fca61f;*/
   --black: #242d49;
   --gray: #788097;
   --blueCard: #ddf8fe;
@@ -23,7 +23,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 * {
   font-family: "Roboto";
   font-weight: normal;

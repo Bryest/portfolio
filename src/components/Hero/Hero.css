@@ -37,17 +37,17 @@
   width: 6rem;
   height: 2rem;
 }
-.icons {
+.Hero .icons {
   position: relative;
   left: -23px;
   margin-top: 0.5rem;
   display: flex;
   gap: 0rem;
 }
-.icons > * {
+.Hero .icons > * {
   transform: scale(0.5);
 }
-.icons > *:hover {
+.Hero .icons > *:hover {
   cursor: pointer;
 }
 
