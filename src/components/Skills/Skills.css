@@ -23,7 +23,6 @@
 .skills .icons {
   display: grid;
   grid-template-columns: auto auto;
-
   text-align: center;
   align-items: end;
   gap: 10px;
@@ -34,7 +33,7 @@
 }
 
 .skills .icons a img {
-  width: 70%;
+  width: 45%;
   height: 100%;
 }
 
