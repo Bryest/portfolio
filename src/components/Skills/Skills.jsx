@@ -51,7 +51,7 @@ const Skills = () => {
           <span>CSS</span>
         </div>
         <div>
-          <a href="https://azure.microsoft.com/en-us"><img src="https://cdn.cdnlogo.com/logos/a/12/azure.svg" /></a>
+          <a href="https://azure.microsoft.com/en-us"><img src="https://cdn.cdnlogo.com/logos/a/12/azure.svg" alt="Azure" /></a>
           <span>Azure</span>
         </div>
       </div>

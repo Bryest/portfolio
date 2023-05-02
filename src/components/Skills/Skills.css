@@ -22,20 +22,65 @@
 
 .skills .icons {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto auto auto;
   text-align: center;
-  align-items: end;
-  gap: 10px;
+  column-gap: 0px;
+  row-gap: 25px;
+}
+
+.skills .icons div {
+  width: 100%;
 }
 
 .skills .icons a {
-  display: block;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 80%;
 }
 
 .skills .icons a img {
-  width: 45%;
+  width: 40%;
   height: 100%;
 }
 
-@media screen and (max-width: 480px) {
+.skills .icons span {
+  display: block;
+  height: 20%;
+}
+
+@media screen and (min-width: 600px) {
+  .skills .icons {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    height: 280px;
+    gap: 30px;
+    row-gap: 5px;
+    position: relative;
+    left: -30px;
+  }
+
+  .skills .icons div {
+    width: auto;
+    height: 100%;
+    padding-top: 20px;
+  }
+
+  .skills .icons a {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 80%;
+  }
+
+  .skills .icons a img {
+    width: auto;
+    height: 75%;
+  }
+
+  .skills .icons span {
+    padding-top: 10px;
+  }
 }

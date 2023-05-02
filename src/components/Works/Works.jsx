@@ -22,7 +22,6 @@ const Works = () => {
             My Work
           </span>
           <span>Check out some of my recent work</span>
-
         </div>
       </div>
 
